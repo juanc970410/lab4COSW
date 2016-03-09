@@ -7,6 +7,8 @@
     <property name="hibernate.connection.url">jdbc:mysql://desarrollo.is.escuelaing.edu.co:3306/bdprueba?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">bdprueba</property>
     <property name="hibernate.connection.password">bdprueba</property>
+    
+    
   </session-factory>
     
 </hibernate-configuration>

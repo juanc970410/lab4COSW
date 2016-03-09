@@ -14,8 +14,7 @@ public class Cliente  implements java.io.Serializable {
      private ClienteId id;
      private String nombre;
      private String direccion;
-     private String telefono;
-     private Set polizasAprobadases = new HashSet(0);
+     private String telefono;     
 
     public Cliente() {
     }
@@ -26,13 +25,6 @@ public class Cliente  implements java.io.Serializable {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
-    }
-    public Cliente(ClienteId id, String nombre, String direccion, String telefono, Set polizasAprobadases) {
-       this.id = id;
-       this.nombre = nombre;
-       this.direccion = direccion;
-       this.telefono = telefono;
-       this.polizasAprobadases = polizasAprobadases;
     }
    
     public ClienteId getId() {
@@ -63,16 +55,6 @@ public class Cliente  implements java.io.Serializable {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    public Set getPolizasAprobadases() {
-        return this.polizasAprobadases;
-    }
-    
-    public void setPolizasAprobadases(Set polizasAprobadases) {
-        this.polizasAprobadases = polizasAprobadases;
-    }
-
-
-
 
 }
 

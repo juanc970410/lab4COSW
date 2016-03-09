@@ -15,7 +15,6 @@ public class TipoPoliza  implements java.io.Serializable {
      private String nombre;
      private String descripcion;
      private long montoMaximo;
-     private Set polizasAprobadases = new HashSet(0);
 
     public TipoPoliza() {
     }
@@ -26,13 +25,6 @@ public class TipoPoliza  implements java.io.Serializable {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.montoMaximo = montoMaximo;
-    }
-    public TipoPoliza(int codigoPoliza, String nombre, String descripcion, long montoMaximo, Set polizasAprobadases) {
-       this.codigoPoliza = codigoPoliza;
-       this.nombre = nombre;
-       this.descripcion = descripcion;
-       this.montoMaximo = montoMaximo;
-       this.polizasAprobadases = polizasAprobadases;
     }
    
     public int getCodigoPoliza() {
@@ -63,15 +55,6 @@ public class TipoPoliza  implements java.io.Serializable {
     public void setMontoMaximo(long montoMaximo) {
         this.montoMaximo = montoMaximo;
     }
-    public Set getPolizasAprobadases() {
-        return this.polizasAprobadases;
-    }
-    
-    public void setPolizasAprobadases(Set polizasAprobadases) {
-        this.polizasAprobadases = polizasAprobadases;
-    }
-
-
 
 
 }
