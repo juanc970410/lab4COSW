@@ -56,7 +56,9 @@
 ![](img/POLIZAS.png)
 
 1. Abra el proyecto correspondiente al caso. Revise y haga un diagrama (en papel) del modelo de clases que corresponde a las clases suministradas.
-2. 
+2. Realice el mismo procedimiento anterior, esta vez teniendo también en cuenta que:
+	* En esta caso hay dos entidades con llaves compuestas.
+	* Las relaciones son @ManyToOne, entre PolizaAprobada y Cliente/TipoPoliza.
 
 
 ![](img/ESTUDIANTES_CURSOS.png)
