@@ -21,7 +21,7 @@
    		 public PacientesId getId() {
 	        return this.id;
     	 }
-```	
+	```	
 	
 	* Cuando una entidad tiene una realación con otra entidad, a la misma se le debe agregar la anotación @OneToMany o @ManyToOne, según corresponda. En este caso, como la relación se da de uno a muchos (de forma unidireccional) entre Paciente y Consulta, en la entidad Paciente se debe agregar la anotación @OneToMany en el método 'get' correspondiente.
 	* En caso de que las tablas no tengan nombres que sigan la convención de JPA, es necesario agregar más detalles a las relaciones @OneToMany y @ManyToOne. En este caso, es necesario indicar a través de qué columnas se harán los JOIN mediante la anotación [@JoinColumns](https://docs.oracle.com/javaee/6/api/javax/persistence/JoinColumns.html). Como se observa en la documentación, @JoinColumns define varios [@JoinColumn](https://docs.oracle.com/javaee/6/api/javax/persistence/JoinColumn.html), uno para cada columna de la tabla con la que se haga el JOIN para relacionar a las dos entidades. En este caso, es necesario que a cada anotación @JoinColumn agregue la propiedad *nullable=false* (de lo contrario, se permitiría crear una sentencia SQL que no inserte las llaves foráneas):
@@ -38,11 +38,11 @@
 		<mapping class="edu.eci.cosw.ejemplo.EntidadABC"/>
 		...
 	<session-factory>
-```
+	```
 
 4. En el programa base suministrado (SimpleMainApp), a través de la sesión creada consulte el Paciente cuyo identificador es: id: 1, tipoid: "cc". Para esto, use el método [load](https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#load(java.lang.Class,%20java.io.Serializable)) de la clase Session. Haga que el programa imprima por pantalla el resumen de cada una de las consultas.
 
-5. Modifique el programa anterior para que al paciente consultado se le agregue una nueva consulta que tenga su nombre en la descripción. Actualice el paciente mediante el método [saveOrUpdate] del objeto Session (https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#saveOrUpdate(java.lang.Object)). Qué error se produce?. Teniendo en cuenta el siguiente diagrama, identifique la causa del problema:
+5. Modifique el programa anterior para que al paciente consultado se le agregue una nueva consulta que tenga su nombre en la descripción. Actualice el paciente mediante el método [saveOrUpdate](https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#saveOrUpdate(java.lang.Object)) del objeto Session. Qué error se produce?. Teniendo en cuenta el siguiente diagrama, identifique la causa del problema:
 
 	![](img/hibernate-lc.png)
 
