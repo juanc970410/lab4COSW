@@ -55,6 +55,8 @@
 
 ![](img/POLIZAS.png)
 
+1. Para evitar conflictos en sus pruebas por el uso concurrente de la base de datos, cree una privada en [http://www.freemysqlhosting.net](http://www.freemysqlhosting.net). Una vez hecho esto, cree las tablas usando el script disponible en scripts/creationScript.sql. Finalmente, cambie la configuración de los programas (hibernate.cfg.xml) para que hagan uso de su base de datos privada, en lugar de la base de datos 'comunal'.
+
 1. Abra el proyecto correspondiente al caso. Revise y haga un diagrama (en papel) del modelo de clases que corresponde a las clases suministradas.
 2. Realice el mismo procedimiento anterior, esta vez teniendo también en cuenta que:
 	* En esta caso hay dos entidades con llaves compuestas.
