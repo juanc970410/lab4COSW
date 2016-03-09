@@ -42,7 +42,7 @@
 
 4. En el programa base suministrado (SimpleMainApp), a través de la sesión creada consulte el Paciente cuyo identificador es: id: 1, tipoid: "cc". Para esto, use el método [load](https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#load(java.lang.Class,%20java.io.Serializable)) de la clase Session. Haga que el programa imprima por pantalla el resumen de cada una de las consultas.
 
-5. Modifique el programa anterior para que al paciente consultado se le agregue una nueva consulta que tenga su nombre en la descripción. Actualice el paciente mediante el método [saveOrUpdate] del objeto Session (https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#saveOrUpdate(java.lang.Object)). Qué error se produce?. Teniendo en cuenta el siguiente diagrama, identifique la causa del problema:
+5. Modifique el programa anterior para que al paciente consultado se le agregue una nueva consulta que tenga su nombre en la descripción. Actualice el paciente mediante el método [saveOrUpdate](https://docs.jboss.org/hibernate/orm/4.3/javadocs/org/hibernate/Session.html#saveOrUpdate(java.lang.Object) del objeto Session. Qué error se produce?. Teniendo en cuenta el siguiente diagrama, identifique la causa del problema:
 
 	![](img/hibernate-lc.png)
 
