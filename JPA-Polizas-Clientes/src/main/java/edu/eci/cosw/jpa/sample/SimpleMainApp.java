@@ -34,7 +34,10 @@ public class SimpleMainApp {
         Session s=sf.openSession();
         Transaction tx=s.beginTransaction();
         
-        tx.commit();        
+        tx.commit();       
+        s.close();
+        sf.close();
+
     }
 
     public static SessionFactory getSessionFactory() {

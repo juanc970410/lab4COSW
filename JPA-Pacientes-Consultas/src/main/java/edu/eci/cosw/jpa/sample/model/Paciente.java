@@ -54,11 +54,11 @@ public class Paciente  implements java.io.Serializable {
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-    public Set<Consulta> getConsultases() {
+    public Set<Consulta> getConsultas() {
         return this.consultas;
     }
     
-    public void setConsultases(Set<Consulta> consultases) {
+    public void setConsultas(Set<Consulta> consultases) {
         this.consultas = consultases;
     }
 
