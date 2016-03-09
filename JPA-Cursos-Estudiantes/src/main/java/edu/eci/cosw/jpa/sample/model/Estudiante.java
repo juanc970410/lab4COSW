@@ -12,7 +12,8 @@ public class Estudiante  implements java.io.Serializable {
 
 
      private int codigo;
-     private String nombre;     
+     private String nombre;
+     private Set<Curso> cursos = new HashSet<>(0);
 
     public Estudiante() {
     }
@@ -21,6 +22,11 @@ public class Estudiante  implements java.io.Serializable {
     public Estudiante(int codigo, String nombre) {
         this.codigo = codigo;
         this.nombre = nombre;
+    }
+    public Estudiante(int codigo, String nombre, Set cursos) {
+       this.codigo = codigo;
+       this.nombre = nombre;
+       this.cursos = cursos;
     }
    
     public int getCodigo() {
@@ -37,6 +43,16 @@ public class Estudiante  implements java.io.Serializable {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    public Set getCursos() {
+        return this.cursos;
+    }
+    
+    public void setCursos(Set cursos) {
+        this.cursos = cursos;
+    }
+
+
+
 
 }
 
