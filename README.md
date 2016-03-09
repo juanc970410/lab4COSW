@@ -58,7 +58,14 @@
 1. Abra el proyecto correspondiente al caso. Revise y haga un diagrama (en papel) del modelo de clases que corresponde a las clases suministradas.
 2. Realice el mismo procedimiento anterior, esta vez teniendo también en cuenta que:
 	* En esta caso hay dos entidades con llaves compuestas.
-	* Las relaciones son @ManyToOne, entre PolizaAprobada y Cliente/TipoPoliza.
+	* Las relaciones son unidireccionales, de tipo @ManyToOne, entre PolizaAprobada y Cliente/TipoPoliza (no olvide agregar la anotación @JoinColumn / @JoinColumns con sus respectivos detalles, si la relación entre el 'Many' y el 'One' se da con una o con varias columnas, respectivamente).
+3. Haga un programa que cree un nuevo cliente (con su nombre), y cree para éste una nueva 'póliza aprobada' asociada a la póliza #1.
 
+
+###Caso #3. Modelo de Estudiantes y cursos (bidireccional).
 
 ![](img/ESTUDIANTES_CURSOS.png)
+
+1. Abra el proyecto correspondiente al caso. Revise y haga un diagrama (en papel) del modelo de clases que corresponde a las clases suministradas.
+2. Realice el mismo procedimiento anterior, esta vez teniendo también en cuenta que:
+	* En esta caso va a implementar una relación bidireccional, de tipo @ManyToMany entre Estudiante y Curso. Revise el ejemplo #3 de la documentación de [@ManyToMany](https://docs.oracle.com/javaee/6/api/javax/persistence/ManyToMany.html) para ver cómo se hace uso de la anotación @JoinTable. En el caso de @ManyToMany, es neceario, en lugar de definir cuales son las 'columnas de JOIN' (@JoinColumn/@JoinColumns), definir cual es la 'tabla de JOIN' (@JoinTable).
