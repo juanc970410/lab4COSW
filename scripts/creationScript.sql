@@ -649,7 +649,7 @@ VALUES
 	(2090903,'Judas'),
 	(3078216,'AndresNeitor'),
 	(7777777,'Anonimo'),
-	(20766500,'camilo forero 1'),
+	(20766500,'camilo herrera 1'),
 	(20766501,'camilo forero 2'),
 	(20766502,'camilo forero 3'),
 	(20766509,'camilo forero 9'),

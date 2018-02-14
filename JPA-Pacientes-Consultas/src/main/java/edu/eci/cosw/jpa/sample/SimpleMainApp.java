@@ -16,6 +16,12 @@
  */
 package edu.eci.cosw.jpa.sample;
 
+import edu.eci.cosw.jpa.sample.model.Consulta;
+import edu.eci.cosw.jpa.sample.model.Paciente;
+import edu.eci.cosw.jpa.sample.model.PacienteId;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.Set;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -27,14 +33,24 @@ import org.hibernate.service.ServiceRegistry;
  *
  * @author hcadavid
  */
-public class SimpleMainApp {
+public class SimpleMainApp{
    
     public static void main(String a[]){
         SessionFactory sf=getSessionFactory();
         Session s=sf.openSession();
         Transaction tx=s.beginTransaction();
         
-        tx.commit();    
+        
+        Paciente p = (Paciente) (s.load(Paciente.class, new PacienteId(7, "cc")));
+        for (Consulta c : p.getConsultas()) {
+            System.out.println(c.getIdConsultas());
+            System.out.println(c.getFechaYHora());
+            System.out.println(c.getResumen());
+        }
+        
+        p.getConsultas().add(new Consulta(new Date(2018, 2, 14), p.getNombre()));
+        s.saveOrUpdate(p);
+        tx.commit();
         s.close();
         sf.close();
 
@@ -51,5 +67,6 @@ public class SimpleMainApp {
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
         return sessionFactory;
     }
+
 
 }
