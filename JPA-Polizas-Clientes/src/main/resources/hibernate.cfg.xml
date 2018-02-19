@@ -4,9 +4,9 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://desarrollo.is.escuelaing.edu.co:3306/bdprueba?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">bdprueba</property>
-    <property name="hibernate.connection.password">bdprueba</property>
+    <property name="hibernate.connection.url">jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3222029?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">sql3222029</property>
+    <property name="hibernate.connection.password">NlImeabY7P</property>
   
   
     <property name="show_sql">true</property>
