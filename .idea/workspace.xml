@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ae818d4-aca4-4b85-b3a7-c6536c6b9d81" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/JPA-Cursos-Estudiantes/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/JPA-Cursos-Estudiantes/src/main/resources/hibernate.cfg.xml" />
-      <change beforePath="$PROJECT_DIR$/JPA-Pacientes-Consultas/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/JPA-Pacientes-Consultas/src/main/resources/hibernate.cfg.xml" />
-      <change beforePath="$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/resources/hibernate.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/java/edu/eci/cosw/jpa/sample/model/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -59,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/java/edu/eci/cosw/jpa/sample/model/TipoPoliza.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -85,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="525" />
     <option name="width" value="755" />
     <option name="height" value="800" />
@@ -340,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -437,7 +435,7 @@
     <entry file="file://$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/java/edu/eci/cosw/jpa/sample/model/TipoPoliza.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -445,7 +443,7 @@
     <entry file="file://$PROJECT_DIR$/JPA-Polizas-Clientes/src/main/java/edu/eci/cosw/jpa/sample/model/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
         </state>
       </provider>

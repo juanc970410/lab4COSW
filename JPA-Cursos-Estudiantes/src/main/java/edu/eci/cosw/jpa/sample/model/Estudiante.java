@@ -64,7 +64,7 @@ public class Estudiante  implements java.io.Serializable {
         inverseJoinColumns = 
             @JoinColumn(name="CURSOS_id", referencedColumnName="id")
     )
-    public Set getCursos() {
+    public Set<Curso> getCursos() {
         return this.cursos;
     }
     
